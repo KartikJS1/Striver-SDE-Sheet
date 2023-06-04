@@ -8,7 +8,7 @@ int maximumProfit(vector<int> &prices)
     {
         int cost = prices[i] - mini;
         profit = max(profit, cost);
-        mini = min(mini, prices[i]);
+        mini = min(mini, prices[i]);//remembering the past
     }
     return profit;
 }
